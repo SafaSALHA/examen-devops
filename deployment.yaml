@@ -13,7 +13,7 @@ spec:
         app: springappsalutation
     spec:
       containers:
-      - name: spring-app-Salutation
+      - name: spring-app-salutation
         image: safa318/salutation:v1.0
         ports:
         - containerPort: 8888
