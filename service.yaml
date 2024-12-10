@@ -4,7 +4,7 @@ metadata:
   name: springappsalutation
 spec:
   selector:
-    app: spring-app-Salutation
+    app: springappsalutation
   ports:
   - protocol: TCP
     port: 8888 # Port exposé sur le service
