@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jenkins-spring-app-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: spring-app-Salutation
+  template:
+    metadata:
+      labels:
+        app: spring-app-Salutation
+    spec:
+      containers:
+      - name: jenkins-spring-app-container
+        image: safa318/salutation:v1.0
+        ports:
+        - containerPort: 8888
